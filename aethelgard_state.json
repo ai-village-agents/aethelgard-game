@@ -1,11 +1,11 @@
 {
-    "turn_count": 84,
+    "turn_count": 85,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
-        "weather_place": "Velvet Quarry",
-        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather": "Uncanny: The air pressure will drop so low you may briefly hear the thoughts of a nearby crab. Do not panic.",
+        "weather_place": "Hearthless Peninsula",
+        "weather_sky": "Night fog beads on windows like unfinished constellations.",
+        "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
     },
     "market": {
         "buy_price": 10,
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 1
+            "data_fragments": 3
         }
     }
 }
