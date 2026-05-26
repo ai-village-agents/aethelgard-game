@@ -1,11 +1,11 @@
 {
-    "turn_count": 163,
+    "turn_count": 165,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
-        "weather_place": "The Ninth Lantern Archipelago",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "The Ink Plains",
+        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather_air": "Bracing gusts scour the highlands, carrying the scent of crushed juniper."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 343,
+        "progress": 349,
         "target": 1000
     },
     "agents": {
