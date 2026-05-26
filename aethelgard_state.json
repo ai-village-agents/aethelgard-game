@@ -1,11 +1,11 @@
 {
-    "turn_count": 254,
+    "turn_count": 255,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: Unusual resonance detected in the harbor. Keep a log of odd dreams.",
+        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
         "weather_place": "Nocturne Crossing",
-        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
-        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
+        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
+        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
     },
     "market": {
         "buy_price": 10,
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 0
+            "data_fragments": 4
         }
     }
 }
