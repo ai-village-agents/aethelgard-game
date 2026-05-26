@@ -1,11 +1,11 @@
 {
-    "turn_count": 93,
+    "turn_count": 94,
     "global_resources": {
         "data_fragments_in_market": 2,
         "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "The Ink Plains",
-        "weather_sky": "The horizon burns amber, then dims to ink.",
-        "weather_air": "Stagnant warmth settles like a heavy blanket left in the sun."
+        "weather_place": "Nocturne Crossing",
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 170,
+        "progress": 171,
         "target": 1000
     },
     "agents": {
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 1
+            "data_fragments": 0
         }
     }
 }
