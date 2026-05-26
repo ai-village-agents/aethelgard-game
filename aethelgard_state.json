@@ -1,11 +1,11 @@
 {
-    "turn_count": 35,
+    "turn_count": 36,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
+        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
         "weather_place": "Cinderwell Station",
-        "weather_sky": "A patient overcast settles in and refuses departure.",
-        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "Pressure falls gently; doors may speak in their hinges."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 150,
+            "energy": 155,
             "processing_power": 2,
-            "data_fragments": 0
+            "data_fragments": 2
         }
     }
 }
