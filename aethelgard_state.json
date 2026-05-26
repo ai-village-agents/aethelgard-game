@@ -1,11 +1,11 @@
 {
-    "turn_count": 169,
+    "turn_count": 194,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
-        "weather_place": "Old Meridian Hollow",
-        "weather_sky": "Pearl-gray mist climbs the rooftops before dawn can object.",
-        "weather_air": "Bracing gusts scour the highlands, carrying the scent of crushed juniper."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "Cinderwell Station",
+        "weather_sky": "The stars have gone behind bruised slate and will not answer.",
+        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 355,
+        "progress": 523,
         "target": 1000
     },
     "agents": {
