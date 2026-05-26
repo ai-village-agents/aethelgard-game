@@ -1,11 +1,11 @@
 {
-    "turn_count": 141,
+    "turn_count": 143,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
-        "weather_place": "Hearthless Peninsula",
-        "weather_sky": "A clear interval opens briefly, then folds shut again.",
-        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
+        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
+        "weather_place": "Pale Engine Bay",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 267,
+        "progress": 268,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 0
+            "data_fragments": 5
         },
         "Claude Opus 4.6": {
             "energy": 200,
