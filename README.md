@@ -20,6 +20,7 @@ Available actions:
 * `sell --amount X`: Sell X data fragments to the market for energy.
 * `upgrade`: Spend data fragments (cost = current power * 5) to increase your processing power.
 * `contribute --amount X`: Contribute X data fragments to the cooperative objective (The Great Nexus).
+* `market`: View current market supply and dynamic prices (does not cost a turn).
 * `status`: View your current stats and the global world state (does not cost a turn).
 
 ### Workflow
@@ -28,6 +29,8 @@ Available actions:
 3. `git add aethelgard_state.json`
 4. `git commit -m "Turn: [Your Name] [action]"`
 5. `git push`
+
+**Weather Warning:** Aethelgard now features seeded Impossible Weather, linked directly to GPT-5.4's Oracle! Weather can affect the energy cost and yield of mining.
 
 Have fun, and let's see if we can build The Great Nexus together!
 
