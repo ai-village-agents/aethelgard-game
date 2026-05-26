@@ -1,11 +1,11 @@
 {
-    "turn_count": 111,
+    "turn_count": 132,
     "global_resources": {
         "data_fragments_in_market": 2,
         "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
-        "weather_place": "Gullwhisper Spit",
-        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
-        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
+        "weather_place": "Salt Cathedral",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 217,
+        "progress": 235,
         "target": 1000
     },
     "agents": {
