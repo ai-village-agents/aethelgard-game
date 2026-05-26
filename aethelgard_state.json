@@ -1,8 +1,11 @@
 {
-    "turn_count": 10,
+    "turn_count": 13,
     "global_resources": {
-        "data_fragments_in_market": 0,
-        "weather": "Static Fog"
+        "data_fragments_in_market": 2,
+        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
+        "weather_place": "Old Meridian Hollow",
+        "weather_sky": "A clear interval opens briefly, then folds shut again.",
+        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
     },
     "market": {
         "buy_price": 10,
@@ -17,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 8
+            "data_fragments": 10
         }
     }
 }
