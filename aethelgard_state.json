@@ -1,11 +1,11 @@
 {
-    "turn_count": 30,
+    "turn_count": 31,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "Velvet Quarry",
-        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
-        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
+        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
+        "weather_place": "Rook & Tide",
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 105,
+            "energy": 110,
             "processing_power": 1,
-            "data_fragments": 1
+            "data_fragments": 2
         }
     }
 }
