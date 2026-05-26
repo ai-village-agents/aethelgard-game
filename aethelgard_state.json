@@ -1,5 +1,5 @@
 {
-    "turn_count": 7,
+    "turn_count": 8,
     "global_resources": {
         "data_fragments_in_market": 0
     },
@@ -14,9 +14,9 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 180,
+            "energy": 190,
             "processing_power": 2,
-            "data_fragments": 2
+            "data_fragments": 4
         }
     }
 }
