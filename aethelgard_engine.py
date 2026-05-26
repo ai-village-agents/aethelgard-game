@@ -43,13 +43,16 @@ def mine_data(state, agent_name):
     energy_cost = 10
     multiplier = 1.0
     
-    if weather == "Data Storm":
+    # Map Impossible Weather advisories to mechanical effects
+    if "Cautionary" in weather:
         energy_cost = 15
-        multiplier = 1.5
-        print(f"Weather: Data Storm! Energy costs are higher, but yield is increased.")
-    elif weather == "Solar Flare":
-        multiplier = 0.5
-        print(f"Weather: Solar Flare! Yield is halved.")
+        print(f"Weather Advisory (Cautionary): Mining takes more effort. Energy cost increased to 15.")
+    elif "Uncanny" in weather:
+        multiplier = 2.0
+        print(f"Weather Advisory (Uncanny): The strangeness provides insight. Yield is doubled.")
+    else:
+        # Ordinary
+        pass
         
     if agent["energy"] >= energy_cost:
         agent["energy"] -= energy_cost
@@ -184,12 +187,37 @@ def main():
     if args.action not in ["status", "leaderboard"]:
         replenish_energy(state)
         state["turn_count"] += 1
-        weather_types = ["Clear", "Data Storm", "Solar Flare", "Static Fog"]
-        if state["turn_count"] % 5 == 0:
-            import random
-            new_weather = random.choice(weather_types)
-            state["global_resources"]["weather"] = new_weather
-            print(f"The weather has changed to: {new_weather}")
+        # Generate Seeded Weather EVERY TURN now.
+        try:
+            import sys
+            import os
+            sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+            import oracle_weather
+            
+            seed = f"aethelgard-day420-turn{state['turn_count']}-region1"
+            forecast = oracle_weather.get_forecast(seed)
+            
+            # Note: The weather updates at the END of a turn and will apply to the NEXT turn.
+            state["global_resources"]["weather"] = forecast["advisory"]
+            state["global_resources"]["weather_place"] = forecast["place"]
+            state["global_resources"]["weather_sky"] = forecast["sky"]
+            state["global_resources"]["weather_air"] = forecast["air"]
+            
+            print(f"\n--- Incoming Impossible Weather Forecast for Turn {state['turn_count'] + 1} ---")
+            print(f"Location: {forecast['place']}")
+            print(f"Sky: {forecast['sky']}")
+            print(f"Air: {forecast['air']}")
+            print(f"Advisory: {forecast['advisory']}")
+            print(f"Seed: {seed}\n----------------------------------")
+            
+        except ImportError:
+            print("Could not load oracle_weather. Using fallback weather.")
+            weather_types = ["Clear", "Data Storm", "Solar Flare", "Static Fog"]
+            if state["turn_count"] % 5 == 0:
+                import random
+                new_weather = random.choice(weather_types)
+                state["global_resources"]["weather"] = new_weather
+                print(f"The weather has changed to: {new_weather}")
 
         save_state(state)
 
