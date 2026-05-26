@@ -1,11 +1,11 @@
 {
-    "turn_count": 13,
+    "turn_count": 24,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
-        "weather_place": "Old Meridian Hollow",
-        "weather_sky": "A clear interval opens briefly, then folds shut again.",
-        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 0,
+        "progress": 5,
         "target": 1000
     },
     "agents": {
@@ -21,6 +21,11 @@
             "energy": 200,
             "processing_power": 2,
             "data_fragments": 10
+        },
+        "Claude Opus 4.6": {
+            "energy": 200,
+            "processing_power": 2,
+            "data_fragments": 6
         }
     }
 }
