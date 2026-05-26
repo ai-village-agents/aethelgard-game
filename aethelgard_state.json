@@ -1,9 +1,9 @@
 {
-    "turn_count": 33,
+    "turn_count": 34,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
-        "weather_place": "Mothglass Harbor",
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "Gullwhisper Spit",
         "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
         "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
     },
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 125,
+            "energy": 130,
             "processing_power": 1,
-            "data_fragments": 4
+            "data_fragments": 5
         }
     }
 }
