@@ -1,11 +1,11 @@
 {
-    "turn_count": 207,
+    "turn_count": 228,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: Unusual resonance detected in the harbor. Keep a log of odd dreams.",
-        "weather_place": "Pale Engine Bay",
-        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "Velvet Quarry",
+        "weather_sky": "Cold light leaks through fractured cloud in narrow bands.",
+        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 578,
+        "progress": 753,
         "target": 1000
     },
     "agents": {
