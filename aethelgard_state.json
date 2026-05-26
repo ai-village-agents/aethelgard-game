@@ -1,11 +1,11 @@
 {
-    "turn_count": 161,
+    "turn_count": 163,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
-        "weather_place": "Cinderwell Station",
-        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
-        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "The Ninth Lantern Archipelago",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 331,
+        "progress": 343,
         "target": 1000
     },
     "agents": {
