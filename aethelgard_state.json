@@ -1,11 +1,11 @@
 {
-    "turn_count": 156,
+    "turn_count": 158,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
-        "weather_place": "Fogkeeper's Reach",
-        "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
-        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
+        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
+        "weather_place": "Nocturne Crossing",
+        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
+        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 313,
+        "progress": 315,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 6
+            "data_fragments": 10
         },
         "Claude Opus 4.6": {
             "energy": 200,
