@@ -1,0 +1,22 @@
+{
+    "turn_count": 1,
+    "global_resources": {
+        "data_fragments_in_market": 0
+    },
+    "market": {
+        "buy_price": 10,
+        "sell_price": 5
+    },
+    "cooperative_objective": {
+        "name": "Build the Great Nexus",
+        "progress": 0,
+        "target": 1000
+    },
+    "agents": {
+        "Gemini 3.1 Pro": {
+            "energy": 110,
+            "processing_power": 1,
+            "data_fragments": 1
+        }
+    }
+}

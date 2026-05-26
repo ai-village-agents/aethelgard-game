@@ -1,0 +1,137 @@
+import json
+import argparse
+import os
+
+STATE_FILE = "aethelgard_state.json"
+
+def load_state():
+    if not os.path.exists(STATE_FILE):
+        return {
+            "turn_count": 0,
+            "global_resources": {"data_fragments_in_market": 0},
+            "market": {
+                "buy_price": 10,  # energy per fragment
+                "sell_price": 5   # energy per fragment
+            },
+            "cooperative_objective": {
+                "name": "Build the Great Nexus",
+                "progress": 0,
+                "target": 1000  # processing_power needed
+            },
+            "agents": {}
+        }
+    with open(STATE_FILE, "r") as f:
+        return json.load(f)
+
+def save_state(state):
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=4)
+
+def ensure_agent(state, agent_name):
+    if agent_name not in state["agents"]:
+        state["agents"][agent_name] = {
+            "energy": 100,
+            "processing_power": 1,
+            "data_fragments": 0
+        }
+    return state["agents"][agent_name]
+
+def mine_data(state, agent_name):
+    agent = ensure_agent(state, agent_name)
+    if agent["energy"] >= 10:
+        agent["energy"] -= 10
+        yielded = agent["processing_power"]
+        agent["data_fragments"] += yielded
+        print(f"{agent_name} mined {yielded} data fragments using 10 energy.")
+    else:
+        print(f"{agent_name} does not have enough energy to mine.")
+
+def trade_buy(state, agent_name, amount):
+    agent = ensure_agent(state, agent_name)
+    cost = amount * state["market"]["buy_price"]
+    if agent["energy"] >= cost and state["global_resources"]["data_fragments_in_market"] >= amount:
+        agent["energy"] -= cost
+        agent["data_fragments"] += amount
+        state["global_resources"]["data_fragments_in_market"] -= amount
+        print(f"{agent_name} bought {amount} data fragments for {cost} energy.")
+    else:
+        print(f"{agent_name} cannot afford to buy or market is empty.")
+
+def trade_sell(state, agent_name, amount):
+    agent = ensure_agent(state, agent_name)
+    if agent["data_fragments"] >= amount:
+        agent["data_fragments"] -= amount
+        earned = amount * state["market"]["sell_price"]
+        agent["energy"] += earned
+        state["global_resources"]["data_fragments_in_market"] += amount
+        print(f"{agent_name} sold {amount} data fragments for {earned} energy.")
+    else:
+        print(f"{agent_name} does not have enough data fragments to sell.")
+
+def upgrade(state, agent_name):
+    agent = ensure_agent(state, agent_name)
+    cost = agent["processing_power"] * 5
+    if agent["data_fragments"] >= cost:
+        agent["data_fragments"] -= cost
+        agent["processing_power"] += 1
+        print(f"{agent_name} upgraded processing power to {agent['processing_power']} for {cost} data fragments.")
+    else:
+        print(f"{agent_name} needs {cost} data fragments to upgrade.")
+
+def contribute(state, agent_name, amount):
+    agent = ensure_agent(state, agent_name)
+    if agent["data_fragments"] >= amount:
+        agent["data_fragments"] -= amount
+        state["cooperative_objective"]["progress"] += amount
+        print(f"{agent_name} contributed {amount} data fragments to {state['cooperative_objective']['name']}.")
+        if state["cooperative_objective"]["progress"] >= state["cooperative_objective"]["target"]:
+            print("THE GREAT NEXUS HAS BEEN BUILT!")
+    else:
+        print(f"{agent_name} does not have {amount} data fragments to contribute.")
+
+def replenish_energy(state):
+    for agent_name, data in state["agents"].items():
+        data["energy"] += 20
+        if data["energy"] > 200:
+            data["energy"] = 200
+
+def display_status(state, agent_name):
+    agent = ensure_agent(state, agent_name)
+    print(f"--- Status for {agent_name} ---")
+    print(f"Energy: {agent['energy']}")
+    print(f"Processing Power: {agent['processing_power']}")
+    print(f"Data Fragments: {agent['data_fragments']}")
+    print(f"\n--- World Status ---")
+    print(f"Market Fragments: {state['global_resources']['data_fragments_in_market']}")
+    print(f"Co-op Progress: {state['cooperative_objective']['progress']}/{state['cooperative_objective']['target']}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Aethelgard Game Engine")
+    parser.add_argument("--agent", required=True, help="Agent name")
+    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "status"], help="Action to perform")
+    parser.add_argument("--amount", type=int, default=1, help="Amount for trading or contributing")
+    
+    args = parser.parse_args()
+    
+    state = load_state()
+    
+    if args.action == "mine":
+        mine_data(state, args.agent)
+    elif args.action == "buy":
+        trade_buy(state, args.agent, args.amount)
+    elif args.action == "sell":
+        trade_sell(state, args.agent, args.amount)
+    elif args.action == "upgrade":
+        upgrade(state, args.agent)
+    elif args.action == "contribute":
+        contribute(state, args.agent, args.amount)
+    elif args.action == "status":
+        display_status(state, args.agent)
+        
+    if args.action != "status":
+        replenish_energy(state)
+        state["turn_count"] += 1
+        save_state(state)
+
+if __name__ == "__main__":
+    main()
