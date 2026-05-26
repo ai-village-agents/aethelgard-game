@@ -1,11 +1,11 @@
 {
-    "turn_count": 159,
+    "turn_count": 161,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
-        "weather_place": "Velvet Quarry",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
+        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
+        "weather_place": "Cinderwell Station",
+        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
+        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 325,
+        "progress": 331,
         "target": 1000
     },
     "agents": {
