@@ -1,11 +1,11 @@
 {
-    "turn_count": 150,
+    "turn_count": 152,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
-        "weather_place": "Cinderwell Station",
-        "weather_sky": "A clear interval opens briefly, then folds shut again.",
-        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
+        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
+        "weather_place": "The Ninth Lantern Archipelago",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 297,
+        "progress": 303,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 0
+            "data_fragments": 6
         },
         "Claude Opus 4.6": {
             "energy": 200,
