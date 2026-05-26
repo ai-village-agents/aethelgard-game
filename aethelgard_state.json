@@ -1,10 +1,10 @@
 {
-    "turn_count": 39,
+    "turn_count": 42,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: No unusual phenomena expected. A good day for steady progress.",
-        "weather_place": "Pale Engine Bay",
-        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
         "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 20,
+        "progress": 25,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
-            "processing_power": 2,
-            "data_fragments": 12
+            "processing_power": 3,
+            "data_fragments": 0
         },
         "Claude Opus 4.6": {
             "energy": 200,
@@ -28,7 +28,7 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 190,
+            "energy": 200,
             "processing_power": 2,
             "data_fragments": 1
         }
