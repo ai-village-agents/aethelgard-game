@@ -1,10 +1,10 @@
 {
-    "turn_count": 144,
+    "turn_count": 146,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
+        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
         "weather_place": "Mothglass Harbor",
-        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
         "weather_air": "A sudden squall rattles the rigging before dying completely."
     },
     "market": {
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 273,
+        "progress": 279,
         "target": 1000
     },
     "agents": {
