@@ -1,11 +1,11 @@
 {
-    "turn_count": 105,
+    "turn_count": 111,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
-        "weather_place": "Velvet Quarry",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
+        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
     },
     "market": {
         "buy_price": 10,
@@ -19,7 +19,7 @@
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
-            "processing_power": 5,
+            "processing_power": 6,
             "data_fragments": 0
         },
         "Claude Opus 4.6": {
