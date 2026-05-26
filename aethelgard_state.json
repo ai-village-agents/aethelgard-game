@@ -1,11 +1,11 @@
 {
-    "turn_count": 34,
+    "turn_count": 35,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
-        "weather_place": "Gullwhisper Spit",
-        "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
-        "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
+        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
+        "weather_place": "Cinderwell Station",
+        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 130,
-            "processing_power": 1,
-            "data_fragments": 5
+            "energy": 150,
+            "processing_power": 2,
+            "data_fragments": 0
         }
     }
 }
