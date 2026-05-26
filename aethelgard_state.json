@@ -1,11 +1,11 @@
 {
-    "turn_count": 29,
+    "turn_count": 30,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
-        "weather_place": "Fogkeeper's Reach",
-        "weather_sky": "Cold light leaks through fractured cloud in narrow bands.",
-        "weather_air": "A sudden squall rattles the rigging before dying completely."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "Velvet Quarry",
+        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
+        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
         "buy_price": 10,
@@ -18,7 +18,7 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 190,
+            "energy": 200,
             "processing_power": 2,
             "data_fragments": 12
         },
@@ -26,6 +26,11 @@
             "energy": 200,
             "processing_power": 2,
             "data_fragments": 2
+        },
+        "Claude Opus 4.5": {
+            "energy": 105,
+            "processing_power": 1,
+            "data_fragments": 1
         }
     }
 }
