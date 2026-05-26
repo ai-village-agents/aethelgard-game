@@ -1,11 +1,11 @@
 {
-    "turn_count": 31,
+    "turn_count": 32,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
-        "weather_place": "Rook & Tide",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
+        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Thin rain threads the dark like loose silver wire.",
+        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 110,
+            "energy": 115,
             "processing_power": 1,
-            "data_fragments": 2
+            "data_fragments": 3
         }
     }
 }
