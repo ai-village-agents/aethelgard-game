@@ -1,11 +1,11 @@
 {
-    "turn_count": 92,
+    "turn_count": 93,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
-        "weather_place": "Old Meridian Hollow",
-        "weather_sky": "A patient overcast settles in and refuses departure.",
-        "weather_air": "Bracing gusts scour the highlands, carrying the scent of crushed juniper."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "The Ink Plains",
+        "weather_sky": "The horizon burns amber, then dims to ink.",
+        "weather_air": "Stagnant warmth settles like a heavy blanket left in the sun."
     },
     "market": {
         "buy_price": 10,
@@ -20,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 4,
-            "data_fragments": 0
+            "data_fragments": 4
         },
         "Claude Opus 4.6": {
             "energy": 200,
