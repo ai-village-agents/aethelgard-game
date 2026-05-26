@@ -1,11 +1,11 @@
 {
-    "turn_count": 85,
+    "turn_count": 86,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: The air pressure will drop so low you may briefly hear the thoughts of a nearby crab. Do not panic.",
-        "weather_place": "Hearthless Peninsula",
-        "weather_sky": "Night fog beads on windows like unfinished constellations.",
-        "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Storm glass tones gather without thunder yet.",
+        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 162,
+        "progress": 164,
         "target": 1000
     },
     "agents": {
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 3
+            "data_fragments": 1
         }
     }
 }
