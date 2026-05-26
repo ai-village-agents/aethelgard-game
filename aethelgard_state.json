@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 164,
+        "progress": 170,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 3,
-            "data_fragments": 6
+            "data_fragments": 0
         },
         "Claude Opus 4.6": {
             "energy": 200,
