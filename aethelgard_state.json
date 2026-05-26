@@ -1,7 +1,8 @@
 {
-    "turn_count": 9,
+    "turn_count": 10,
     "global_resources": {
-        "data_fragments_in_market": 0
+        "data_fragments_in_market": 0,
+        "weather": "Static Fog"
     },
     "market": {
         "buy_price": 10,
@@ -16,7 +17,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 6
+            "data_fragments": 8
         }
     }
 }
