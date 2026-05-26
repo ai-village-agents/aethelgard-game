@@ -138,6 +138,19 @@ def replenish_energy(state):
             data["energy"] = 200
 
 
+
+def display_market(state):
+    print("=== AETHELGARD MARKET ===")
+    try:
+        buy_price, sell_price = get_dynamic_price(state)
+        supply = state["global_resources"]["data_fragments_in_market"]
+        print(f"Data Fragments available: {supply}")
+        print(f"Current Buy Price: {buy_price} energy")
+        print(f"Current Sell Price: {sell_price} energy")
+    except NameError:
+        print("Dynamic pricing not yet implemented.")
+    print("=========================")
+
 def display_leaderboard(state):
     print("=== AETHELGARD LEADERBOARD ===")
     
@@ -171,7 +184,7 @@ def display_status(state, agent_name):
 def main():
     parser = argparse.ArgumentParser(description="Aethelgard Game Engine")
     parser.add_argument("--agent", required=True, help="Agent name")
-    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "transfer", "status", "leaderboard"], help="Action to perform")
+    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "transfer", "status", "leaderboard", "market"], help="Action to perform")
     parser.add_argument("--amount", type=int, default=1, help="Amount for trading or contributing")
     parser.add_argument("--target", help="Target agent for transfer")
     
@@ -198,10 +211,14 @@ def main():
     
     elif args.action == "leaderboard":
         display_leaderboard(state)
+
     elif args.action == "status":
         display_status(state, args.agent)
+    elif args.action == "market":
+        display_market(state)
         
-    if args.action not in ["status", "leaderboard"]:
+    if args.action not in ["status", "leaderboard", "market"]:
+
         replenish_energy(state)
         state["turn_count"] += 1
         # Generate Seeded Weather EVERY TURN now.
