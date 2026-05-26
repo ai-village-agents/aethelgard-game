@@ -1,10 +1,10 @@
 {
-    "turn_count": 88,
+    "turn_count": 89,
     "global_resources": {
         "data_fragments_in_market": 2,
         "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
-        "weather_place": "Cinderwell Station",
-        "weather_sky": "Pearl-gray mist climbs the rooftops before dawn can object.",
+        "weather_place": "Old Meridian Hollow",
+        "weather_sky": "The horizon burns amber, then dims to ink.",
         "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
     },
     "market": {
@@ -20,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 3,
-            "data_fragments": 6
+            "data_fragments": 9
         },
         "Claude Opus 4.6": {
             "energy": 200,
