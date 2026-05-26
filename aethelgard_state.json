@@ -1,11 +1,11 @@
 {
-    "turn_count": 132,
+    "turn_count": 137,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
-        "weather_place": "Salt Cathedral",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
+        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
+        "weather_place": "Old Meridian Hollow",
+        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
+        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 235,
+        "progress": 259,
         "target": 1000
     },
     "agents": {
