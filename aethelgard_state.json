@@ -1,11 +1,11 @@
 {
-    "turn_count": 38,
+    "turn_count": 39,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: The air pressure will drop so low you may briefly hear the thoughts of a nearby crab. Do not panic.",
-        "weather_place": "Gullwhisper Spit",
-        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
-        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
+        "weather": "Ordinary: No unusual phenomena expected. A good day for steady progress.",
+        "weather_place": "Pale Engine Bay",
+        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 15,
+        "progress": 20,
         "target": 1000
     },
     "agents": {
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 170,
+            "energy": 190,
             "processing_power": 2,
-            "data_fragments": 6
+            "data_fragments": 1
         }
     }
 }
