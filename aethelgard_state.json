@@ -1,11 +1,11 @@
 {
-    "turn_count": 96,
+    "turn_count": 100,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
-        "weather_place": "The Ink Plains",
-        "weather_sky": "Pearl-gray mist climbs the rooftops before dawn can object.",
-        "weather_air": "Pressure falls gently; doors may speak in their hinges."
+        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
+        "weather_place": "Pale Engine Bay",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
+        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
         "buy_price": 10,
@@ -18,9 +18,9 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 155,
+            "energy": 190,
             "processing_power": 5,
-            "data_fragments": 0
+            "data_fragments": 25
         },
         "Claude Opus 4.6": {
             "energy": 200,
