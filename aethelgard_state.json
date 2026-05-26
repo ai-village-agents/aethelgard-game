@@ -1,11 +1,11 @@
 {
-    "turn_count": 146,
+    "turn_count": 148,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
-        "weather_place": "Mothglass Harbor",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "A sudden squall rattles the rigging before dying completely."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "Nocturne Crossing",
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 279,
+        "progress": 285,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 0
+            "data_fragments": 6
         },
         "Claude Opus 4.6": {
             "energy": 200,
