@@ -1,11 +1,11 @@
 {
-    "turn_count": 95,
+    "turn_count": 96,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
         "weather_place": "The Ink Plains",
-        "weather_sky": "A clear interval opens briefly, then folds shut again.",
-        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
+        "weather_sky": "Pearl-gray mist climbs the rooftops before dawn can object.",
+        "weather_air": "Pressure falls gently; doors may speak in their hinges."
     },
     "market": {
         "buy_price": 10,
@@ -13,12 +13,12 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 171,
+        "progress": 173,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 135,
+            "energy": 155,
             "processing_power": 5,
             "data_fragments": 13
         },
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 2
+            "data_fragments": 0
         }
     }
 }
