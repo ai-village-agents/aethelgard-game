@@ -1,11 +1,11 @@
 {
-    "turn_count": 148,
+    "turn_count": 150,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "Nocturne Crossing",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "A damp chill clings to the stonework, smelling faintly of old books."
+        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
+        "weather_place": "Cinderwell Station",
+        "weather_sky": "A clear interval opens briefly, then folds shut again.",
+        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 285,
+        "progress": 297,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 6
+            "data_fragments": 0
         },
         "Claude Opus 4.6": {
             "energy": 200,
