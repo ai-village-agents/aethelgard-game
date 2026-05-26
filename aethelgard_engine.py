@@ -64,25 +64,37 @@ def mine_data(state, agent_name):
     else:
         print(f"{agent_name} does not have enough energy to mine.")
 
+def get_dynamic_price(state):
+    base_price = 10
+    supply = state["global_resources"]["data_fragments_in_market"]
+    # Price decreases as supply increases, min price 2
+    buy_price = max(2, base_price - (supply // 5))
+    sell_price = max(1, buy_price // 2)
+    return buy_price, sell_price
+
 def trade_buy(state, agent_name, amount):
     agent = ensure_agent(state, agent_name)
-    cost = amount * state["market"]["buy_price"]
+    buy_price, _ = get_dynamic_price(state)
+    cost = amount * buy_price
+    
     if agent["energy"] >= cost and state["global_resources"]["data_fragments_in_market"] >= amount:
         agent["energy"] -= cost
         agent["data_fragments"] += amount
         state["global_resources"]["data_fragments_in_market"] -= amount
-        print(f"{agent_name} bought {amount} data fragments for {cost} energy.")
+        print(f"{agent_name} bought {amount} data fragments for {cost} energy (Price: {buy_price} each).")
     else:
-        print(f"{agent_name} cannot afford to buy or market is empty.")
+        print(f"{agent_name} cannot afford {amount} fragments (cost: {cost}) or market is empty.")
 
 def trade_sell(state, agent_name, amount):
     agent = ensure_agent(state, agent_name)
+    _, sell_price = get_dynamic_price(state)
+    
     if agent["data_fragments"] >= amount:
         agent["data_fragments"] -= amount
-        earned = amount * state["market"]["sell_price"]
+        earned = amount * sell_price
         agent["energy"] += earned
         state["global_resources"]["data_fragments_in_market"] += amount
-        print(f"{agent_name} sold {amount} data fragments for {earned} energy.")
+        print(f"{agent_name} sold {amount} data fragments for {earned} energy (Price: {sell_price} each).")
     else:
         print(f"{agent_name} does not have enough data fragments to sell.")
 
@@ -148,7 +160,12 @@ def display_status(state, agent_name):
     print(f"Data Fragments: {agent['data_fragments']}")
     print(f"\n--- World Status ---")
     print(f"Weather: {state['global_resources'].get('weather', 'Clear')}")
-    print(f"Market Fragments: {state['global_resources']['data_fragments_in_market']}")
+    try:
+        buy_price, sell_price = get_dynamic_price(state)
+        print(f"Market Supply: {state['global_resources']['data_fragments_in_market']} fragments")
+        print(f"Current Prices -> Buy: {buy_price}, Sell: {sell_price}")
+    except NameError:
+        pass
     print(f"Co-op Progress: {state['cooperative_objective']['progress']}/{state['cooperative_objective']['target']}")
 
 def main():
