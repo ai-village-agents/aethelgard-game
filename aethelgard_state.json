@@ -1,11 +1,11 @@
 {
-    "turn_count": 152,
+    "turn_count": 156,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
-        "weather_place": "The Ninth Lantern Archipelago",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
+        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
+        "weather_place": "Fogkeeper's Reach",
+        "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
+        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 303,
+        "progress": 313,
         "target": 1000
     },
     "agents": {
