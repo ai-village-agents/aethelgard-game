@@ -1,11 +1,11 @@
 {
-    "turn_count": 32,
+    "turn_count": 33,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
-        "weather_place": "Gullwhisper Spit",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
+        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
+        "weather_place": "Mothglass Harbor",
+        "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
+        "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 115,
+            "energy": 125,
             "processing_power": 1,
-            "data_fragments": 3
+            "data_fragments": 4
         }
     }
 }
