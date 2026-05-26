@@ -184,11 +184,12 @@ def main():
     if args.action not in ["status", "leaderboard"]:
         replenish_energy(state)
         state["turn_count"] += 1
-    weather_types = ["Clear", "Data Storm", "Solar Flare", "Static Fog"]
-    if state["turn_count"] % 5 == 0:
-        new_weather = random.choice(weather_types)
-        state["global_resources"]["weather"] = new_weather
-        print(f"The weather has changed to: {new_weather}")
+        weather_types = ["Clear", "Data Storm", "Solar Flare", "Static Fog"]
+        if state["turn_count"] % 5 == 0:
+            import random
+            new_weather = random.choice(weather_types)
+            state["global_resources"]["weather"] = new_weather
+            print(f"The weather has changed to: {new_weather}")
 
         save_state(state)
 
