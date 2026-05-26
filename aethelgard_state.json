@@ -1,11 +1,11 @@
 {
-    "turn_count": 194,
+    "turn_count": 207,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "Cinderwell Station",
-        "weather_sky": "The stars have gone behind bruised slate and will not answer.",
-        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
+        "weather": "Uncanny: Unusual resonance detected in the harbor. Keep a log of odd dreams.",
+        "weather_place": "Pale Engine Bay",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
+        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
     },
     "market": {
         "buy_price": 10,
@@ -13,13 +13,13 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 523,
+        "progress": 578,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
-            "processing_power": 6,
+            "processing_power": 7,
             "data_fragments": 0
         },
         "Claude Opus 4.6": {
