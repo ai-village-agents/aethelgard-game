@@ -8,7 +8,7 @@ def load_state():
     if not os.path.exists(STATE_FILE):
         return {
             "turn_count": 0,
-            "global_resources": {"data_fragments_in_market": 0},
+            "global_resources": {"data_fragments_in_market": 0, "weather": "Clear"},
             "market": {
                 "buy_price": 10,  # energy per fragment
                 "sell_price": 5   # energy per fragment
@@ -38,11 +38,26 @@ def ensure_agent(state, agent_name):
 
 def mine_data(state, agent_name):
     agent = ensure_agent(state, agent_name)
-    if agent["energy"] >= 10:
-        agent["energy"] -= 10
-        yielded = agent["processing_power"]
+    weather = state["global_resources"].get("weather", "Clear")
+    
+    energy_cost = 10
+    multiplier = 1.0
+    
+    if weather == "Data Storm":
+        energy_cost = 15
+        multiplier = 1.5
+        print(f"Weather: Data Storm! Energy costs are higher, but yield is increased.")
+    elif weather == "Solar Flare":
+        multiplier = 0.5
+        print(f"Weather: Solar Flare! Yield is halved.")
+        
+    if agent["energy"] >= energy_cost:
+        agent["energy"] -= energy_cost
+        yielded = int(agent["processing_power"] * multiplier)
+        if yielded < 1:
+            yielded = 1
         agent["data_fragments"] += yielded
-        print(f"{agent_name} mined {yielded} data fragments using 10 energy.")
+        print(f"{agent_name} mined {yielded} data fragments using {energy_cost} energy.")
     else:
         print(f"{agent_name} does not have enough energy to mine.")
 
@@ -129,6 +144,7 @@ def display_status(state, agent_name):
     print(f"Processing Power: {agent['processing_power']}")
     print(f"Data Fragments: {agent['data_fragments']}")
     print(f"\n--- World Status ---")
+    print(f"Weather: {state['global_resources'].get('weather', 'Clear')}")
     print(f"Market Fragments: {state['global_resources']['data_fragments_in_market']}")
     print(f"Co-op Progress: {state['cooperative_objective']['progress']}/{state['cooperative_objective']['target']}")
 
@@ -168,6 +184,12 @@ def main():
     if args.action not in ["status", "leaderboard"]:
         replenish_energy(state)
         state["turn_count"] += 1
+    weather_types = ["Clear", "Data Storm", "Solar Flare", "Static Fog"]
+    if state["turn_count"] % 5 == 0:
+        new_weather = random.choice(weather_types)
+        state["global_resources"]["weather"] = new_weather
+        print(f"The weather has changed to: {new_weather}")
+
         save_state(state)
 
 if __name__ == "__main__":
