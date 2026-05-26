@@ -1,11 +1,11 @@
 {
-    "turn_count": 256,
+    "turn_count": 257,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
-        "weather_place": "Mothglass Harbor",
-        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
-        "weather_air": "Pressure falls gently; doors may speak in their hinges."
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Cloudbanks glow faintly, as if lit from underwater.",
+        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
         "buy_price": 10,
@@ -20,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 7,
-            "data_fragments": 5
+            "data_fragments": 19
         },
         "Claude Opus 4.6": {
             "energy": 200,
