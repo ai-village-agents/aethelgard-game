@@ -1,11 +1,11 @@
 {
-    "turn_count": 36,
+    "turn_count": 37,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
-        "weather_place": "Cinderwell Station",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "Pressure falls gently; doors may speak in their hinges."
+        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather_place": "Gullwhisper Spit",
+        "weather_sky": "Storm glass tones gather without thunder yet.",
+        "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
         "buy_price": 10,
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 155,
+            "energy": 165,
             "processing_power": 2,
-            "data_fragments": 2
+            "data_fragments": 4
         }
     }
 }
