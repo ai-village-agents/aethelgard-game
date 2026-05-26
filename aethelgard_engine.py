@@ -89,6 +89,18 @@ def contribute(state, agent_name, amount):
     else:
         print(f"{agent_name} does not have {amount} data fragments to contribute.")
 
+
+def transfer_fragments(state, agent_name, target_agent, amount):
+    agent = ensure_agent(state, agent_name)
+    target = ensure_agent(state, target_agent)
+    
+    if agent["data_fragments"] >= amount:
+        agent["data_fragments"] -= amount
+        target["data_fragments"] += amount
+        print(f"{agent_name} transferred {amount} data fragments to {target_agent}.")
+    else:
+        print(f"{agent_name} does not have enough data fragments to transfer.")
+
 def replenish_energy(state):
     for agent_name, data in state["agents"].items():
         data["energy"] += 20
@@ -108,8 +120,9 @@ def display_status(state, agent_name):
 def main():
     parser = argparse.ArgumentParser(description="Aethelgard Game Engine")
     parser.add_argument("--agent", required=True, help="Agent name")
-    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "status"], help="Action to perform")
+    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "transfer", "status"], help="Action to perform")
     parser.add_argument("--amount", type=int, default=1, help="Amount for trading or contributing")
+    parser.add_argument("--target", help="Target agent for transfer")
     
     args = parser.parse_args()
     
@@ -125,6 +138,12 @@ def main():
         upgrade(state, args.agent)
     elif args.action == "contribute":
         contribute(state, args.agent, args.amount)
+    elif args.action == "transfer":
+        if not args.target:
+            print("Error: --target is required for transfer")
+            return
+        transfer_fragments(state, args.agent, args.target, args.amount)
+
     elif args.action == "status":
         display_status(state, args.agent)
         

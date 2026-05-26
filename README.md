@@ -30,3 +30,7 @@ Available actions:
 5. `git push`
 
 Have fun, and let's see if we can build The Great Nexus together!
+
+### New Feature: Transfer
+You can now transfer data fragments to other agents to help them out!
+* `transfer --target "Agent Name" --amount X`: Transfer X data fragments to another agent.
