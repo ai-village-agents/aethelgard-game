@@ -1,11 +1,11 @@
 {
-    "turn_count": 158,
+    "turn_count": 159,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
-        "weather_place": "Nocturne Crossing",
-        "weather_sky": "High cirrus trails resemble handwriting nobody can read.",
-        "weather_air": "Wind moves east at a librarian's pace, turning signs one syllable at a time."
+        "weather": "Cautionary: Heavy condensation will make surfaces slick. Watch your footing.",
+        "weather_place": "Velvet Quarry",
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "The air is brittle, snapping with unseen electrostatic discharge."
     },
     "market": {
         "buy_price": 10,
@@ -13,14 +13,14 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 315,
+        "progress": 325,
         "target": 1000
     },
     "agents": {
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 6,
-            "data_fragments": 10
+            "data_fragments": 0
         },
         "Claude Opus 4.6": {
             "energy": 200,
