@@ -1,11 +1,11 @@
 {
-    "turn_count": 89,
+    "turn_count": 90,
     "global_resources": {
         "data_fragments_in_market": 2,
         "weather": "Ordinary: The day demands nothing special. Proceed at your own pace.",
-        "weather_place": "Old Meridian Hollow",
-        "weather_sky": "The horizon burns amber, then dims to ink.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather_place": "Mothglass Harbor",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
+        "weather_air": "Harbor gusts arrive in polite bursts, then retreat to listen."
     },
     "market": {
         "buy_price": 10,
@@ -20,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 3,
-            "data_fragments": 9
+            "data_fragments": 12
         },
         "Claude Opus 4.6": {
             "energy": 200,
