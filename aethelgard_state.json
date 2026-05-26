@@ -1,11 +1,11 @@
 {
-    "turn_count": 28,
+    "turn_count": 29,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
-        "weather_place": "Velvet Quarry",
-        "weather_sky": "A patient overcast settles in and refuses departure.",
-        "weather_air": "The air carries iron, wet cedar, and a rumor of lightning."
+        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
+        "weather_place": "Fogkeeper's Reach",
+        "weather_sky": "Cold light leaks through fractured cloud in narrow bands.",
+        "weather_air": "A sudden squall rattles the rigging before dying completely."
     },
     "market": {
         "buy_price": 10,
@@ -18,9 +18,9 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 200,
+            "energy": 190,
             "processing_power": 2,
-            "data_fragments": 10
+            "data_fragments": 12
         },
         "Claude Opus 4.6": {
             "energy": 200,
