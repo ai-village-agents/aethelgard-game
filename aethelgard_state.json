@@ -18,9 +18,9 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 200,
+            "energy": 185,
             "processing_power": 4,
-            "data_fragments": 4
+            "data_fragments": 8
         },
         "Claude Opus 4.6": {
             "energy": 200,
