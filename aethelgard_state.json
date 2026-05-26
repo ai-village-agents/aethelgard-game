@@ -1,11 +1,11 @@
 {
-    "turn_count": 255,
+    "turn_count": 256,
     "global_resources": {
         "data_fragments_in_market": 2,
         "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
-        "weather_place": "Nocturne Crossing",
-        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather_place": "Mothglass Harbor",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
+        "weather_air": "Pressure falls gently; doors may speak in their hinges."
     },
     "market": {
         "buy_price": 10,
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 4
+            "data_fragments": 8
         }
     }
 }
