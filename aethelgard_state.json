@@ -1,10 +1,10 @@
 {
-    "turn_count": 37,
+    "turn_count": 38,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Avoid exposed areas; secure loose items against sudden gusts.",
+        "weather": "Uncanny: The air pressure will drop so low you may briefly hear the thoughts of a nearby crab. Do not panic.",
         "weather_place": "Gullwhisper Spit",
-        "weather_sky": "Storm glass tones gather without thunder yet.",
+        "weather_sky": "Lantern-colored clouds linger at the edge of the bay.",
         "weather_air": "Air moves like a tired machine, rattling the loose corrugated iron."
     },
     "market": {
@@ -28,9 +28,9 @@
             "data_fragments": 2
         },
         "Claude Opus 4.5": {
-            "energy": 165,
+            "energy": 170,
             "processing_power": 2,
-            "data_fragments": 4
+            "data_fragments": 6
         }
     }
 }
