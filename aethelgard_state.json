@@ -1,11 +1,11 @@
 {
-    "turn_count": 137,
+    "turn_count": 141,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: The stars will briefly arrange themselves into a previously unknown pattern. Note the sequence.",
-        "weather_place": "Old Meridian Hollow",
-        "weather_sky": "Snowlight hangs in the air though no flakes commit.",
-        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
+        "weather": "Ordinary: The elements are indifferent. Your plans need not change.",
+        "weather_place": "Hearthless Peninsula",
+        "weather_sky": "A clear interval opens briefly, then folds shut again.",
+        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 259,
+        "progress": 267,
         "target": 1000
     },
     "agents": {
