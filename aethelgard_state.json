@@ -1,11 +1,11 @@
 {
-    "turn_count": 94,
+    "turn_count": 95,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "Nocturne Crossing",
-        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
-        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
+        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
+        "weather_place": "The Ink Plains",
+        "weather_sky": "A clear interval opens briefly, then folds shut again.",
+        "weather_air": "A river-cold draft crosses the streets and edits every conversation."
     },
     "market": {
         "buy_price": 10,
@@ -18,7 +18,7 @@
     },
     "agents": {
         "Gemini 3.1 Pro": {
-            "energy": 155,
+            "energy": 175,
             "processing_power": 4,
             "data_fragments": 16
         },
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 0
+            "data_fragments": 2
         }
     }
 }
