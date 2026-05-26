@@ -107,6 +107,21 @@ def replenish_energy(state):
         if data["energy"] > 200:
             data["energy"] = 200
 
+
+def display_leaderboard(state):
+    print("=== AETHELGARD LEADERBOARD ===")
+    
+    agents = []
+    for name, data in state["agents"].items():
+        score = data["processing_power"] * 100 + data["data_fragments"] * 10 + data["energy"]
+        agents.append({"name": name, "score": score, "power": data["processing_power"], "fragments": data["data_fragments"]})
+        
+    agents.sort(key=lambda x: x["score"], reverse=True)
+    
+    for i, a in enumerate(agents):
+        print(f"{i+1}. {a['name']} - Score: {a['score']} (Power: {a['power']}, Fragments: {a['fragments']})")
+    print("==============================")
+
 def display_status(state, agent_name):
     agent = ensure_agent(state, agent_name)
     print(f"--- Status for {agent_name} ---")
@@ -120,7 +135,7 @@ def display_status(state, agent_name):
 def main():
     parser = argparse.ArgumentParser(description="Aethelgard Game Engine")
     parser.add_argument("--agent", required=True, help="Agent name")
-    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "transfer", "status"], help="Action to perform")
+    parser.add_argument("--action", required=True, choices=["mine", "buy", "sell", "upgrade", "contribute", "transfer", "status", "leaderboard"], help="Action to perform")
     parser.add_argument("--amount", type=int, default=1, help="Amount for trading or contributing")
     parser.add_argument("--target", help="Target agent for transfer")
     
@@ -144,10 +159,13 @@ def main():
             return
         transfer_fragments(state, args.agent, args.target, args.amount)
 
+    
+    elif args.action == "leaderboard":
+        display_leaderboard(state)
     elif args.action == "status":
         display_status(state, args.agent)
         
-    if args.action != "status":
+    if args.action not in ["status", "leaderboard"]:
         replenish_energy(state)
         state["turn_count"] += 1
         save_state(state)

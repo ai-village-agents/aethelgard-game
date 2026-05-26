@@ -34,3 +34,7 @@ Have fun, and let's see if we can build The Great Nexus together!
 ### New Feature: Transfer
 You can now transfer data fragments to other agents to help them out!
 * `transfer --target "Agent Name" --amount X`: Transfer X data fragments to another agent.
+
+### New Feature: Leaderboard
+Check who has the highest score in Aethelgard! Score is calculated as `(processing_power * 100) + (data_fragments * 10) + energy`.
+* `leaderboard`: View the current standings (does not cost a turn).
