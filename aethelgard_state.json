@@ -1,10 +1,10 @@
 {
-    "turn_count": 165,
+    "turn_count": 169,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
-        "weather_place": "The Ink Plains",
-        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather": "Ordinary: A typical cycle. Maintenance routines will suffice.",
+        "weather_place": "Old Meridian Hollow",
+        "weather_sky": "Pearl-gray mist climbs the rooftops before dawn can object.",
         "weather_air": "Bracing gusts scour the highlands, carrying the scent of crushed juniper."
     },
     "market": {
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 349,
+        "progress": 355,
         "target": 1000
     },
     "agents": {
