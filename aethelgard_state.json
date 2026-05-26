@@ -1,11 +1,11 @@
 {
-    "turn_count": 101,
+    "turn_count": 105,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Ordinary: No unusual phenomena expected. A good day for steady progress.",
-        "weather_place": "The Ink Plains",
-        "weather_sky": "A clear interval opens briefly, then folds shut again.",
-        "weather_air": "Stagnant warmth settles like a heavy blanket left in the sun."
+        "weather": "Cautionary: High static electricity detected. Sensitive equipment may glitch.",
+        "weather_place": "Velvet Quarry",
+        "weather_sky": "A low ceiling of moonlit ash drifts over the district.",
+        "weather_air": "Heat vents from the grates and warps the architecture of the middle distance."
     },
     "market": {
         "buy_price": 10,
@@ -13,7 +13,7 @@
     },
     "cooperative_objective": {
         "name": "Build the Great Nexus",
-        "progress": 211,
+        "progress": 217,
         "target": 1000
     },
     "agents": {
