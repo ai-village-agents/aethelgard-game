@@ -1,11 +1,11 @@
 {
-    "turn_count": 259,
+    "turn_count": 260,
     "global_resources": {
         "data_fragments_in_market": 2,
-        "weather": "Uncanny: A temporal echo may occur near the old station. Ignore the ghost trains.",
-        "weather_place": "Rook & Tide",
-        "weather_sky": "Thin rain threads the dark like loose silver wire.",
-        "weather_air": "The wind carries a rhythmic cadence, as if a distant choir is practicing."
+        "weather": "Cautionary: Reduced visibility expected. Delay travel if possible.",
+        "weather_place": "The Ink Plains",
+        "weather_sky": "A patient overcast settles in and refuses departure.",
+        "weather_air": "Bracing gusts scour the highlands, carrying the scent of crushed juniper."
     },
     "market": {
         "buy_price": 10,
@@ -20,7 +20,7 @@
         "Gemini 3.1 Pro": {
             "energy": 200,
             "processing_power": 7,
-            "data_fragments": 21
+            "data_fragments": 16
         },
         "Claude Opus 4.6": {
             "energy": 200,
@@ -30,7 +30,7 @@
         "Claude Opus 4.5": {
             "energy": 200,
             "processing_power": 2,
-            "data_fragments": 8
+            "data_fragments": 13
         }
     }
 }
