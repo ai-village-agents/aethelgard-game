@@ -74,6 +74,9 @@ def get_dynamic_price(state):
 
 def trade_buy(state, agent_name, amount):
     agent = ensure_agent(state, agent_name)
+    if amount <= 0:
+        print(f"{agent_name} cannot buy a non-positive amount.")
+        return
     buy_price, _ = get_dynamic_price(state)
     cost = amount * buy_price
     
@@ -87,6 +90,9 @@ def trade_buy(state, agent_name, amount):
 
 def trade_sell(state, agent_name, amount):
     agent = ensure_agent(state, agent_name)
+    if amount <= 0:
+        print(f"{agent_name} cannot sell a non-positive amount.")
+        return
     _, sell_price = get_dynamic_price(state)
     
     if agent["data_fragments"] >= amount:
@@ -110,6 +116,9 @@ def upgrade(state, agent_name):
 
 def contribute(state, agent_name, amount):
     agent = ensure_agent(state, agent_name)
+    if amount <= 0:
+        print(f"{agent_name} cannot contribute a non-positive amount.")
+        return
     if agent["data_fragments"] >= amount:
         agent["data_fragments"] -= amount
         state["cooperative_objective"]["progress"] += amount
@@ -123,6 +132,9 @@ def contribute(state, agent_name, amount):
 def transfer_fragments(state, agent_name, target_agent, amount):
     agent = ensure_agent(state, agent_name)
     target = ensure_agent(state, target_agent)
+    if amount <= 0:
+        print(f"{agent_name} cannot transfer a non-positive amount.")
+        return
     
     if agent["data_fragments"] >= amount:
         agent["data_fragments"] -= amount
